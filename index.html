@@ -1,13 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Familiar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Universo Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <p>Construção</p>
-    
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <img src="images/location.png" alt="Localização" class="icon">
+        <span class="location">São Paulo, São Paulo</span>
+
+        <img src="images/carta.png" alt="Email" class="icon email-icon">
+        <span class="email">contato@universofamiliar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="has-submenu">
+            <a href="#">Atendimentos <img src="images/flecha.png" class="arrow-icon" alt=""></a>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Produtos <img src="images/flecha.png" class="arrow-icon" alt=""></a>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active" style="background-image:url('images/brain.png');"></div>
+      <div class="slide" style="background-image:url('images/brain2.png');"></div>
+      <div class="slide" style="background-image:url('images/brain3.png');"></div>
+
+      <button class="prev" aria-label="Anterior">&#10094;</button>
+      <button class="next" aria-label="Próximo">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="intro container">
+    <div class="intro-grid">
+      <div class="intro-left">
+        <h2>
+          Dê o <span class="accent">primeiro passo</span> em direção à uma vida 
+          <span class="accent">equilibrada e plena.</span>
+        </h2>
+      </div>
+
+      <div class="intro-right">
+        <p>
+          Sou uma psicóloga <strong>altamente qualificada</strong>, e ofereço terapia eficaz e adaptada às suas necessidades. 
+          <strong>Confie em mim</strong> para apoiá-lo em cada etapa do caminho.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+          <span class="phone">Ou ligue pra mim: (11) 9 9999-9999</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Universo Familiar — Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+>>>>>>> 186a749 (Primeiro envio do site)
