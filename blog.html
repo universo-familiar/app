@@ -1,69 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog | Universo Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="topbar">
-        <div class="container topbar-inner">
-          <div class="topbar-left">
-            <img src="images/location.png" alt="Localização" class="icon">
-            <span class="location">São Paulo, São Paulo</span>
-    
-            <img src="images/carta.png" alt="Email" class="icon email-icon">
-            <span class="email">contato@universofamiliar.com.br</span>
-          </div>
-        </div>
-      </div>
-    
-      <header class="site-header">
-        <div class="container header-inner">
-          <div class="brand">
-            <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
-          </div>
-    
-          <nav class="main-nav" id="mainNav" aria-label="Menu principal">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-          
-              <li class="has-submenu">
-                <a href="#">Atendimentos</a>
-                <ul class="submenu">
-                  <li><a href="terapia-individual.html">Terapia Individual</a></li>
-                  <li><a href="terapia-casal.html">Terapia de Casal</a></li>
-                  <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
-                </ul>
-              </li>
-          
-              <li class="has-submenu">
-                <a href="#">Produtos</a>
-                <ul class="submenu">
-                  <li><a href="ebooks.html">E-books</a></li>
-                  <li><a href="cursos.html">Cursos</a></li>
-                  <li><a href="consultorias.html">Consultorias</a></li>
-                </ul>
-              </li>
-          
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-          
-    
-          <div class="actions">
-            <a class="btn btn-primary" href="#">Solicite uma consulta</a>
-            <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
-          </div>
-        </div>
-      </header>
-    
 
-      <footer class="site-footer">
-        <div class="container">
-          <small>© 2025 Universo Familiar — Todos os direitos reservados.</small>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <img src="images/location.png" alt="Localização" class="icon">
+        <span class="location">São Paulo, São Paulo</span>
+
+        <img src="images/carta.png" alt="Email" class="icon email-icon">
+        <span class="email">contato@universofamiliar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-submenu">
+            <a href="#">Atendimentos</a>
+            <ul class="submenu">
+              <li><a href="terapia-individual.html">Terapia Individual</a></li>
+              <li><a href="terapia-casal.html">Terapia de Casal</a></li>
+              <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#">Produtos</a>
+            <ul class="submenu">
+              <li><a href="ebooks.html">E-books</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="materiais.html">Materiais</a></li>
+              <li><a href="consultorias.html">Consultorias</a></li>
+            </ul>
+          </li>
+
+          <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 80px 0;">
+
+    <h1 style="color: var(--purple-dark); margin-bottom: 40px;">Blog Universo Familiar</h1>
+
+    <p style="font-size: 16px; line-height: 1.7; margin-bottom: 50px; max-width: 820px;">
+      Aqui você encontra artigos, reflexões e conteúdos especiais sobre saúde emocional, família, educação,
+      infância, psicologia e psicopedagogia.  
+      Conteúdos produzidos com base na prática clínica e na missão de acolher e transformar vidas.
+    </p>
+
+    <div class="blog-controls" style="margin-bottom: 40px;">
+      <input type="text" id="blogSearch" placeholder="Pesquisar no blog..." 
+      style="padding: 12px; width: 100%; border-radius: 10px; border:1px solid #ddd;">
+
+      <div class="blog-filters" style="margin-top: 15px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="filter-btn active" data-category="todos">Todos</button>
+        <button class="filter-btn" data-category="infancia">Infância</button>
+        <button class="filter-btn" data-category="familia">Família</button>
+        <button class="filter-btn" data-category="emocional">Emoções</button>
+        <button class="filter-btn" data-category="psico">Psicopedagogia</button>
+      </div>
+    </div>
+
+    <div class="blog-layout" style="display:grid; grid-template-columns:2fr 1fr; gap:40px;">
+
+      <div id="blogPosts" class="services-grid">
+
+        <div class="service-card blog-card" data-category="infancia">
+          <img src="images/blog1.jpg" class="post-card-img" style="border-radius:14px;">
+          <h3 style="color: var(--purple-dark);">Como ajudar seu filho a lidar com as emoções</h3>
+        
+          <div class="post-card-footer">
+            <p>
+              A infância é marcada por muitas descobertas emocionais. Aprenda como acolher sentimentos, identificar sinais de ansiedade e fortalecer o equilíbrio emocional do seu filho.
+              </p>
+              
+            <div class="card-bottom">
+              <a href="post1.html" class="btn btn-primary">Ler mais</a>
+            </div>
+          </div>
         </div>
-      </footer>
+        
+
+        <div class="service-card blog-card" data-category="psico">
+          <img src="images/blog2.jpg" class="post-card-img" style="border-radius:14px;">
+          <h3 style="color: var(--purple-dark);">Sinais de dificuldades de aprendizagem</h3>
+        
+          <div class="post-card-footer">
+            <p>
+              Alguns sinais podem indicar desafios no processo de aprendizagem. Entenda como identificá-los cedo e quando buscar apoio especializado. Leia o post para entender mais a respeito em quando é necessário marcar consulta.
+              </p>
+              
+            <div class="card-bottom">
+              <a href="post2.html" class="btn btn-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="service-card blog-card" data-category="familia">
+          <img src="images/blog3.jpg" class="post-card-img" style="border-radius:14px;">
+          <h3 style="color: var(--purple-dark);">A importância do vínculo familiar</h3>
+        
+          <div class="post-card-footer">
+            <p>
+              O vínculo familiar é a base do desenvolvimento emocional. Descubra como fortalecer laços, comunicar-se melhor e criar um ambiente seguro para seus filhos.
+              </p>
+              
+            <div class="card-bottom">
+              <a href="post3.html" class="btn btn-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="service-card blog-card" data-category="emocional">
+          <img src="images/blog4.jpg" class="post-card-img">
+          <h3 style="color: var(--purple-dark);">Como lidar com a ansiedade no dia a dia</h3>
+        
+          <div class="post-card-footer">
+            <p>
+              A ansiedade pode afetar a rotina e o bem-estar. Veja estratégias simples para aliviar sintomas e cultivar mais equilíbrio emocional.
+              </p>
+              
+            <div class="card-bottom">
+              <a href="post4.html" class="btn btn-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="service-card blog-card" data-category="infancia">
+          <img src="images/blog5.jpg" class="post-card-img">
+          <h3 style="color: var(--purple-dark);">Entendendo as birras na infância</h3>
+        
+          <div class="post-card-footer">
+            <p>
+              As birras fazem parte do desenvolvimento infantil. Saiba como reagir com empatia e ensinar sua criança a lidar melhor com suas emoções.
+              </p>
+              
+            <div class="card-bottom">
+              <a href="post5.html" class="btn btn-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <aside class="blog-sidebar" style="display:flex; flex-direction:column; gap:40px;">
+
+        <div class="sidebar-box" style="background:#fff; padding:20px; border-radius:16px;">
+          <h3 style="color: var(--purple-dark); margin-bottom:16px;">Posts Recomendados</h3>
+
+          <a class="sidebar-post" href="post1.html" style="display:flex; gap:10px; margin-bottom:12px;">
+            <img src="images/blog1.jpg" style="width:60px; height:60px; border-radius:12px; object-fit:cover;">
+            <span>Como ajudar seu filho com emoções</span>
+          </a>
+
+          <a class="sidebar-post" href="post3.html" style="display:flex; gap:10px;">
+            <img src="images/blog3.jpg" style="width:60px; height:60px; border-radius:12px; object-fit:cover;">
+            <span>Fortalecendo o vínculo familiar</span>
+          </a>
+        </div>
+
+        <div class="blog-filters">
+          <button class="filter-btn active" data-category="todos">✨ Todos</button>
+          <button class="filter-btn" data-category="infancia">👶 Infância</button>
+          <button class="filter-btn" data-category="familia">🏡 Família</button>
+          <button class="filter-btn" data-category="emocional">💜 Emoções</button>
+          <button class="filter-btn" data-category="psico">📘 Psicopedagogia</button>
+        </div>
+        
+      </aside>
+
+    </div>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © 2025 Universo Familiar — Todos os direitos reservados. |
+        <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+        <a href="termos-de-uso.html">Termos de Uso</a>
+      </small>
+    </div>
+  </footer>
+
+<button id="backToTop" class="back-to-top">↑</button>
+
+<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn">
+  <img src="images/whatsapp.svg">
+</a>
+
+<script src="script.js"></script>
+
+<script>
+
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const posts = document.querySelectorAll(".blog-card");
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      document.querySelector(".filter-btn.active").classList.remove("active");
+      btn.classList.add("active");
+
+      const category = btn.getAttribute("data-category");
+
+      posts.forEach(post => {
+        if (category === "todos" || post.getAttribute("data-category") === category) {
+          post.style.display = "block";
+        } else {
+          post.style.display = "none";
+        }
+      });
+
+    });
+  });
+
+  const searchInput = document.getElementById("blogSearch");
+
+  searchInput.addEventListener("input", function () {
+    const text = this.value.toLowerCase();
+
+    posts.forEach(post => {
+      const content = post.innerText.toLowerCase();
+      post.style.display = content.includes(text) ? "block" : "none";
+    });
+  });
+
+</script>
+
 </body>
 </html>
+

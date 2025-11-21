@@ -1,71 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terapia de Casal</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terapia de Casal | Universo Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="topbar">
-        <div class="container topbar-inner">
-          <div class="topbar-left">
-            <img src="images/location.png" alt="Localização" class="icon">
-            <span class="location">São Paulo, São Paulo</span>
-    
-            <img src="images/carta.png" alt="Email" class="icon email-icon">
-            <span class="email">contato@universofamiliar.com.br</span>
-          </div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <img src="images/location.png" alt="Localização" class="icon">
+        <span class="location">São Paulo, São Paulo</span>
+
+        <img src="images/carta.png" alt="Email" class="icon email-icon">
+        <span class="email">contato@universofamiliar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Atendimentos</a>
+            <ul class="submenu">
+              <li><a href="terapia-individual.html">Terapia Individual</a></li>
+              <li><a href="terapia-casal.html">Terapia de Casal</a></li>
+              <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Produtos</a>
+            <ul class="submenu">
+              <li><a href="ebooks.html">E-books</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="materiais.html">Materiais</a></li>
+              <li><a href="consultorias.html">Consultorias</a></li>
+            
+            </ul>
+          </li>
+
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 80px 0;">
+    <h1 style="color: var(--purple-dark); margin-bottom: 40px;">Terapia de Casal</h1>
+
+    <div class="about-grid" style="margin-bottom: 60px;">
+      <div class="about-text">
+        <h2>Reconstruindo a Conexão a Dois</h2>
+        <p>A terapia de casal é um espaço seguro, acolhedor e mediado por uma profissional capacitada para ajudar na compreensão das dificuldades do relacionamento. É um processo que favorece o diálogo, o respeito mútuo e a construção de soluções conjuntas.</p>
+
+        <p>Durante as sessões, trabalhamos questões como comunicação, rotina, convivência, expectativas, conflitos emocionais e ajustes necessários para fortalecer o vínculo afetivo.</p>
+      </div>
+
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="images/casal.jpg" alt="Terapia de Casal">
         </div>
       </div>
-    
-      <header class="site-header">
-        <div class="container header-inner">
-          <div class="brand">
-            <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
-          </div>
-    
-          <nav class="main-nav" id="mainNav" aria-label="Menu principal">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-          
-              <li class="has-submenu">
-                <a href="#">Atendimentos</a>
-                <ul class="submenu">
-                  <li><a href="terapia-individual.html">Terapia Individual</a></li>
-                  <li><a href="terapia-casal.html">Terapia de Casal</a></li>
-                  <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
-                </ul>
-              </li>
-          
-              <li class="has-submenu">
-                <a href="#">Produtos</a>
-                <ul class="submenu">
-                  <li><a href="ebooks.html">E-books</a></li>
-                  <li><a href="cursos.html">Cursos</a></li>
-                  <li><a href="consultorias.html">Consultorias</a></li>
-                </ul>
-              </li>
-          
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-          
-    
-          <div class="actions">
-            <a class="btn btn-primary" href="#">Solicite uma consulta</a>
-            <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
-          </div>
-        </div>
-      </header>
+    </div>
 
-    
-      <footer class="site-footer">
-        <div class="container">
-          <small>© 2025 Universo Familiar — Todos os direitos reservados.</small>
-        </div>
-      </footer>
-      <script src="script.js"></script>
+    <hr style="margin: 60px 0;">
 
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">Quando procurar a terapia de casal?</h2>
+    <p style="margin-bottom: 20px;">Casais procuram ajuda em diversos momentos, seja para prevenir conflitos ou para superar situações que já causaram desgaste na relação. Alguns dos motivos mais comuns incluem:</p>
+
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>Dificuldade de comunicação</li>
+      <li>Ciúmes excessivo</li>
+      <li>Conflitos frequentes</li>
+      <li>Distanciamento emocional</li>
+      <li>Desgaste após mudanças familiares (nascimento de filhos, rotina, trabalho)</li>
+      <li>Traições e quebra de confiança</li>
+      <li>Diferenças na criação dos filhos</li>
+      <li>Falta de conexão e intimidade</li>
+    </ul>
+
+    <hr style="margin: 60px 0;">
+
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">Como funciona o processo terapêutico?</h2>
+    <p>A terapia de casal não busca definir “quem está certo ou errado”, mas sim compreender como cada um se sente, quais padrões precisam mudar e como construir juntos uma relação mais leve e madura.</p>
+
+    <p style="margin-top: 15px;">Durante o acompanhamento, trabalhamos:</p>
+
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>Comunicação assertiva</li>
+      <li>Empatia e escuta ativa</li>
+      <li>Fortalecimento do vínculo emocional</li>
+      <li>Planos e objetivos comuns</li>
+      <li>Resolução de conflitos</li>
+      <li>Construção de novas formas de se relacionar</li>
+    </ul>
+
+    <hr style="margin: 60px 0;">
+
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">O objetivo da terapia</h2>
+    <p>O principal objetivo é promover bem-estar para ambos, reconstruindo o diálogo, fortalecendo o vínculo e criando novas possibilidades de convivência. Em alguns casos, a terapia também auxilia os casais a conduzirem separações de forma mais respeitosa e saudável.</p>
+
+    <p style="margin-top: 20px; font-weight: 600;">Cada casal tem sua própria história — e a terapia é o espaço onde ela pode ser ressignificada.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © 2025 Universo Familiar — Todos os direitos reservados.
+        &nbsp;|&nbsp;
+        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Política de Privacidade
+        </a>
+        &nbsp;|&nbsp;
+        <a href="termos-de-uso.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Termos de Uso
+        </a>
+      </small>
+    </div>
+  </footer>
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+  <img src="images/whatsapp.svg" alt="WhatsApp">
+</a>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,70 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultorias</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consultorias | Universo Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="topbar">
-        <div class="container topbar-inner">
-          <div class="topbar-left">
-            <img src="images/location.png" alt="Localização" class="icon">
-            <span class="location">São Paulo, São Paulo</span>
-    
-            <img src="images/carta.png" alt="Email" class="icon email-icon">
-            <span class="email">contato@universofamiliar.com.br</span>
-          </div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <img src="images/location.png" alt="Localização" class="icon">
+        <span class="location">São Paulo, São Paulo</span>
+
+        <img src="images/carta.png" alt="Email" class="icon email-icon">
+        <span class="email">contato@universofamiliar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Atendimentos</a>
+            <ul class="submenu">
+              <li><a href="terapia-individual.html">Terapia Individual</a></li>
+              <li><a href="terapia-casal.html">Terapia de Casal</a></li>
+              <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Produtos</a>
+            <ul class="submenu">
+              <li><a href="ebooks.html">E-books</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="materiais.html">Materiais</a></li>
+              <li><a href="consultorias.html">Consultorias</a></li>
+            
+            </ul>
+          </li>
+
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 80px 0;">
+    <h1 style="color: var(--purple-dark); margin-bottom: 40px;">Consultorias</h1>
+
+    <div class="about-grid" style="margin-bottom: 70px;">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="images/pais.jpg" alt="Orientação de Pais">
         </div>
       </div>
-    
-      <header class="site-header">
-        <div class="container header-inner">
-          <div class="brand">
-            <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
-          </div>
-    
-          <nav class="main-nav" id="mainNav" aria-label="Menu principal">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-          
-              <li class="has-submenu">
-                <a href="#">Atendimentos</a>
-                <ul class="submenu">
-                  <li><a href="terapia-individual.html">Terapia Individual</a></li>
-                  <li><a href="terapia-casal.html">Terapia de Casal</a></li>
-                  <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
-                </ul>
-              </li>
-          
-              <li class="has-submenu">
-                <a href="#">Produtos</a>
-                <ul class="submenu">
-                  <li><a href="ebooks.html">E-books</a></li>
-                  <li><a href="cursos.html">Cursos</a></li>
-                  <li><a href="consultorias.html">Consultorias</a></li>
-                </ul>
-              </li>
-          
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-          
-    
-          <div class="actions">
-            <a class="btn btn-primary" href="#">Solicite uma consulta</a>
-            <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
-          </div>
-        </div>
-      </header>
-    
-      <footer class="site-footer">
-        <div class="container">
-          <small>© 2025 Universo Familiar — Todos os direitos reservados.</small>
-        </div>
-      </footer>
-      <script src="script.js"></script>
 
+      <div class="about-text">
+        <h2>Orientação de Pais</h2>
+        <p>A Orientação de Pais é um processo acolhedor que ajuda responsáveis a compreenderem questões emocionais, comportamentais e educacionais dos filhos. É um espaço para troca, escuta e construção de estratégias eficazes para fortalecer o vínculo familiar.</p>
+
+        <p>Durante os encontros, trabalhamos temas como:</p>
+
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li>Comportamentos desafiadores</li>
+          <li>Dificuldades escolares</li>
+          <li>Ansiedade, medos e inseguranças</li>
+          <li>Rotina, limites e organização</li>
+          <li>Apoio emocional da família</li>
+        </ul>
+
+        <p style="margin-top: 15px;">O objetivo é que os pais entendam as necessidades da criança e consigam oferecer suporte emocional de forma firme, amorosa e coerente.</p>
+      </div>
+    </div>
+
+    <hr style="margin: 60px 0;">
+
+    <div class="about-grid" style="margin-bottom: 70px;">
+      <div class="about-text">
+        <h2>Avaliação Psicopedagógica</h2>
+        <p>A Avaliação Psicopedagógica é um processo detalhado que identifica dificuldades de aprendizagem, questões emocionais relacionadas ao ambiente escolar e possíveis transtornos que interferem no desenvolvimento da criança.</p>
+
+        <p>A avaliação inclui:</p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li>Entrevista com a família</li>
+          <li>Observação clínica</li>
+          <li>Provas operatórias</li>
+          <li>Testes projetivos</li>
+          <li>Análise do histórico escolar</li>
+        </ul>
+
+        <p style="margin-top: 15px;">Ao final, é entregue um relatório completo com orientações e plano de intervenção.</p>
+      </div>
+
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="images/psicopedagogia.jpg" alt="Avaliação Psicopedagógica">
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin: 60px 0;">
+
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="images/intervencao.jpg" alt="Intervenção Psicopedagógica">
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>Intervenção Psicopedagógica</h2>
+        <p>A intervenção psicopedagógica é realizada após a avaliação e utiliza atividades lúdicas, jogos, materiais visuais e estratégias personalizadas para desenvolver habilidades cognitivas e emocionais necessárias para a aprendizagem.</p>
+
+        <p>É indicada para crianças que apresentam:</p>
+
+        <ul style="margin-left:20px; line-height:1.8;">
+          <li>Dificuldades de aprendizagem</li>
+          <li>Transtornos como Dislexia, TDAH, Discalculia</li>
+          <li>Dificuldades de concentração</li>
+          <li>Problemas de organização e rotina</li>
+          <li>Desmotivação escolar</li>
+        </ul>
+
+        <p style="margin-top: 15px;">O trabalho pode envolver escola, psicólogos, fonoaudiólogos e família, criando uma rede de apoio integrada ao desenvolvimento da criança.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © 2025 Universo Familiar — Todos os direitos reservados.
+        &nbsp;|&nbsp;
+        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Política de Privacidade
+        </a>
+        &nbsp;|&nbsp;
+        <a href="termos-de-uso.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Termos de Uso
+        </a>
+      </small>
+    </div>
+  </footer>
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+  <img src="images/whatsapp.svg" alt="WhatsApp">
+</a>
+
+
+  <script src="script.js"></script>
 </body>
 </html>

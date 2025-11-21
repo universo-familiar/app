@@ -1,69 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terapia Individual</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terapia Individual | Universo Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="topbar">
-        <div class="container topbar-inner">
-          <div class="topbar-left">
-            <img src="images/location.png" alt="Localização" class="icon">
-            <span class="location">São Paulo, São Paulo</span>
-    
-            <img src="images/carta.png" alt="Email" class="icon email-icon">
-            <span class="email">contato@universofamiliar.com.br</span>
-          </div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <img src="images/location.png" alt="Localização" class="icon">
+        <span class="location">São Paulo, São Paulo</span>
+
+        <img src="images/carta.png" alt="Email" class="icon email-icon">
+        <span class="email">contato@universofamiliar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Atendimentos</a>
+            <ul class="submenu">
+              <li><a href="terapia-individual.html">Terapia Individual</a></li>
+              <li><a href="terapia-casal.html">Terapia de Casal</a></li>
+              <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#" class="active">Produtos</a>
+            <ul class="submenu">
+              <li><a href="ebooks.html">E-books</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="materiais.html">Materiais</a></li>
+              <li><a href="consultorias.html">Consultorias</a></li>
+            
+            </ul>
+          </li>
+
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="padding: 80px 0;">
+    <h1 style="color: var(--purple-dark); margin-bottom: 40px;">Terapia Individual</h1>
+
+    <div class="about-grid" style="margin-bottom: 60px;">
+      <div class="about-text">
+        <h2>Terapia Cognitivo-Comportamental (TCC)</h2>
+        <p>A Terapia Cognitivo-Comportamental é uma abordagem focada em ajudar você a identificar e transformar padrões de pensamento e comportamento que causam sofrimento emocional. Ela é indicada para ansiedade, insegurança, depressão, autoestima baixa, dificuldades de relacionamento, questões familiares, luto e muito mais.</p>
+        <p>O processo terapêutico promove autoconhecimento, desenvolvimento emocional e melhora significativa na forma como você lida com desafios cotidianos.</p>
+      </div>
+
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="images/therapy1.jpg" alt="Terapia Individual">
         </div>
       </div>
-    
-      <header class="site-header">
-        <div class="container header-inner">
-          <div class="brand">
-            <img src="images/logo-placeholder.png" alt="Universo Familiar" class="logo">
-          </div>
-    
-          <nav class="main-nav" id="mainNav" aria-label="Menu principal">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-          
-              <li class="has-submenu">
-                <a href="#">Atendimentos</a>
-                <ul class="submenu">
-                  <li><a href="terapia-individual.html">Terapia Individual</a></li>
-                  <li><a href="terapia-casal.html">Terapia de Casal</a></li>
-                  <li><a href="terapia-familiar.html">Terapia Familiar</a></li>
-                </ul>
-              </li>
-          
-              <li class="has-submenu">
-                <a href="#">Produtos</a>
-                <ul class="submenu">
-                  <li><a href="ebooks.html">E-books</a></li>
-                  <li><a href="cursos.html">Cursos</a></li>
-                  <li><a href="consultorias.html">Consultorias</a></li>
-                </ul>
-              </li>
-          
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-          
-    
-          <div class="actions">
-            <a class="btn btn-primary" href="#">Solicite uma consulta</a>
-            <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
-          </div>
-        </div>
-      </header>
-    
-      <footer class="site-footer">
-        <div class="container">
-          <small>© 2025 Universo Familiar — Todos os direitos reservados.</small>
-        </div>
-      </footer>
-      <script src="script.js"></script>
+    </div>
+
+    <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eaeaea;">
+
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">Psicopedagogia</h2>
+    <p style="margin-bottom: 20px;">
+      A Psicopedagogia estuda a aprendizagem e identifica dificuldades ou transtornos que podem interferir no desenvolvimento escolar e emocional. É indicada para crianças, adolescentes e adultos que enfrentam dificuldades acadêmicas ou processuais.
+    </p>
+
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>Dificuldade de aprendizagem</li>
+      <li>Transtornos como Dislexia, Discalculia, Disgrafia, TDAH</li>
+      <li>Dificuldades de concentração</li>
+      <li>Desmotivação escolar</li>
+    </ul>
+
+    <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eaeaea;">
+
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">Intervenção Psicopedagógica</h2>
+    <p>
+      A intervenção psicopedagógica é um plano de ação elaborado após a avaliação psicopedagógica. Trabalha-se diretamente nas dificuldades da criança, utilizando estratégias lúdicas que fortalecem o processo de aprendizagem.
+    </p>
+    <p>
+      Em alguns casos, a criança pode ser acompanhada também por fonoaudiólogo, psicólogo ou neurologista, em conjunto com a família e a escola.
+    </p>
+
+    <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eaeaea;">
+
+    <h2 style="color: var(--purple-dark); margin-bottom: 20px;">Terapia Infantil</h2>
+    <p>A terapia infantil utiliza o brincar como ferramenta central para acessar o mundo emocional da criança. Por meio de jogos, histórias, desenhos e atividades lúdicas, a criança expressa sentimentos e desenvolve habilidades emocionais.</p>
+
+    <ul style="margin-left:20px; line-height:1.8;">
+      <li>Dificuldades de relacionamento</li>
+      <li>Conflitos familiares</li>
+      <li>Medos, ansiedade e timidez</li>
+      <li>Comportamentos desafiadores</li>
+      <li>Fases de adaptação (escola, separação dos pais, nascimento de irmão)</li>
+    </ul>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © 2025 Universo Familiar — Todos os direitos reservados.
+        &nbsp;|&nbsp;
+        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Política de Privacidade
+        </a>
+        &nbsp;|&nbsp;
+        <a href="termos-de-uso.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
+          Termos de Uso
+        </a>
+      </small>
+    </div>
+  </footer>
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+  <img src="images/whatsapp.svg" alt="WhatsApp">
+</a>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
