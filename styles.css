@@ -1126,5 +1126,25 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.ebook-img {
+  width: 100%;
+  max-width: 420px;      
+  display: block;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .ebook-img {
+    max-width: 100%;
+  }
+}
 
   
