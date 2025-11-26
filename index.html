@@ -6,6 +6,104 @@
   <title>Universo Familiar</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .sec-roxa {
+      background: #8a4fdc !important;
+      width: 100% !important;
+      padding: 80px 0 !important;
+    }
+    
+    .sec-roxa h1, .sec-roxa h2, .sec-roxa h3,
+    .sec-roxa p, .sec-roxa span, .sec-roxa li,
+    .sec-roxa blockquote, .sec-roxa cite {
+      color: #fff !important;
+    }
+    
+    .sec-roxa .service-card,
+    .sec-roxa .benefit,
+    .sec-roxa .horario-card,
+    .sec-roxa .pricing-card {
+      background: #fff !important;
+      color: #000 !important;
+    }
+    
+    .sec-roxa .service-card h3,
+    .sec-roxa .service-card p,
+    .sec-roxa .benefit p,
+    .sec-roxa .horario-card h3,
+    .sec-roxa .horario-card p,
+    .sec-roxa .pricing-card h3,
+    .sec-roxa .pricing-card p {
+      color: #000 !important;
+    }
+    
+    .sec-roxa .btn,
+    .sec-roxa .btn-primary {
+      background: #fff !important;
+      color: #8a4fdc !important;
+      font-weight: 700 !important;
+      border-radius: 30px !important;
+    }
+    
+    .sec-roxa .service-card {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      justify-content: center !important;
+      padding: 25px !important;
+      border-radius: 16px !important;
+    }
+    
+    .sec-roxa .service-card h3 {
+      text-align: center !important;
+      color: #000 !important;
+      font-weight: 700 !important;
+    }
+    
+    .sec-roxa .service-card p {
+      text-align: center !important;
+      color: #000 !important;
+      margin-top: 10px !important;
+      line-height: 1.6 !important;
+    }
+    
+    .sec-roxa .pricing-card span,
+    .sec-roxa .horario-card span,
+    .sec-roxa .service-card span,
+    .sec-roxa .benefit span {
+      color: #000 !important;
+    }
+    
+    .sec-roxa .pricing-card h3,
+    .sec-roxa .horario-card h3 {
+      color: #000 !important;
+    }
+    
+    .sec-roxa .pricing-card p,
+    .sec-roxa .horario-card p {
+      color: #000 !important;
+    }
+    
+    .sec-roxa .pricing-badge {
+      background: #fff !important;
+      color: #000 !important;
+      border: 1px solid #00000020;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    
+    .sec-roxa .horario-info {
+      color: #000 !important;
+      font-weight: 600 !important;
+    }
+    </style>
+    
+</style>  
+
 </head>
 <body>
 
@@ -14,7 +112,6 @@
       <div class="topbar-left">
         <img src="images/location.png" alt="Localização" class="icon">
         <span class="location">São Paulo, São Paulo</span>
-
         <img src="images/carta.png" alt="Email" class="icon email-icon">
         <span class="email">contato@universofamiliar.com.br</span>
       </div>
@@ -32,7 +129,7 @@
           <li><a href="index.html" class="active">Home</a></li>
 
           <li class="has-submenu">
-            <a href="#" class="active">Atendimentos</a>
+            <a href="#" class="">Atendimentos</a>
             <ul class="submenu">
               <li><a href="terapia-individual.html">Terapia Individual</a></li>
               <li><a href="terapia-casal.html">Terapia de Casal</a></li>
@@ -41,13 +138,12 @@
           </li>
 
           <li class="has-submenu">
-            <a href="#" class="active">Produtos</a>
+            <a href="#" class="">Produtos</a>
             <ul class="submenu">
               <li><a href="ebooks.html">E-books</a></li>
               <li><a href="cursos.html">Cursos</a></li>
               <li><a href="materiais.html">Materiais</a></li>
               <li><a href="consultorias.html">Consultorias</a></li>
-            
             </ul>
           </li>
 
@@ -62,6 +158,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="slider">
       <div class="slide active" style="background-image:url('images/brain.png');"></div>
@@ -73,37 +170,40 @@
     </div>
   </section>
 
-<section class="about container">
-  <div class="about-grid">
-    <div class="about-photo">
-      <div class="photo-frame">
-        <img src="images/psicologa.jpg" alt="Psicóloga" />
+  <section class="about sec-roxa">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="images/psicologa.jpg" alt="Psicóloga" />
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2>Sobre Mim</h2>
+
+          <p>
+            Sou <strong>Camila Fernandes</strong>, psicóloga e psicopedagoga.  
+            Desde muito jovem, descobri minha paixão por compreender o comportamento humano e a forma como as emoções moldam a vida das pessoas.
+          </p>
+
+          <p>
+            Durante minha formação, percebi o quanto o cuidado emocional — principalmente na infância — transforma gerações. A Psicopedagogia ampliou minha visão sobre o desenvolvimento e as dificuldades de aprendizagem, fortalecendo minha prática com crianças, adolescentes e famílias.
+          </p>
+
+          <p>
+            Acredito que cada pessoa carrega um universo único: cheio de histórias, dores, afetos e possibilidades.  
+            Minha missão é acolher, ouvir e conduzir você com empatia e técnica, para que encontre equilíbrio, leveza e autoconfiança.
+          </p>
+
+          <a href="#" class="btn btn-primary">Agende sua sessão</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="about-text">
-      <h2>Sobre Mim</h2>
 
-      <p>
-        Sou <strong>Camila Fernandes</strong>, psicóloga e psicopedagoga.  
-        Desde muito jovem, descobri minha paixão por compreender o comportamento humano e a forma como as emoções moldam a vida das pessoas.
-      </p>
-
-      <p>
-        Durante minha formação, percebi o quanto o cuidado emocional — principalmente na infância — transforma gerações. A Psicopedagogia ampliou minha visão sobre o desenvolvimento e as dificuldades de aprendizagem, fortalecendo minha prática com crianças, adolescentes e famílias.
-      </p>
-
-      <p>
-        Acredito que cada pessoa carrega um universo único: cheio de histórias, dores, afetos e possibilidades.  
-        Minha missão é acolher, ouvir e conduzir você com empatia e técnica, para que encontre equilíbrio, leveza e autoconfiança.
-      </p>
-
-      <a href="#" class="btn btn-primary">Agende sua sessão</a>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials">
+<section class="testimonials sec-branca">
   <div class="container">
     <h2>O que dizem meus pacientes</h2>
     <div class="testimonial-grid">
@@ -127,57 +227,61 @@
   </div>
 </section>
 
-<section class="intro container">
-  <div class="intro-grid">
-    <div class="intro-left">
-      <h2>
-        Dê o <span class="accent">primeiro passo</span> em direção a uma vida 
-        <span class="accent">mais leve e consciente.</span>
-      </h2>
-    </div>
+<section class="intro sec-roxa">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-left">
+        <h2>
+          Dê o <span class="accent">primeiro passo</span> em direção a uma vida 
+          <span class="accent">mais leve e consciente.</span>
+        </h2>
+      </div>
 
-    <div class="intro-right">
-      <p>
-        Sou psicóloga e psicopedagoga, e ofereço atendimentos baseados em acolhimento, ética e técnicas eficazes.  
-        Cada pessoa tem sua própria história — e é uma honra poder acompanhar esse processo de transformação.
-      </p>
+      <div class="intro-right">
+        <p>
+          Sou psicóloga e psicopedagoga, e ofereço atendimentos baseados em acolhimento, ética e técnicas eficazes.  
+          Cada pessoa tem sua própria história — e é uma honra poder acompanhar esse processo de transformação.
+        </p>
 
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
-        <span class="phone">Ou fale comigo: (11) 9 9999-9999</span>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+          <span class="phone">Ou fale comigo: (11) 9 9999-9999</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="approach container">
-  <h2>Minha Abordagem Terapêutica</h2>
-  <p class="subtitle">União entre ciência, acolhimento e sensibilidade para promover transformação emocional.</p>
+<section class="approach sec-branca">
+  <div class="container">
+    <h2>Minha Abordagem Terapêutica</h2>
+    <p class="subtitle">União entre ciência, acolhimento e sensibilidade para promover transformação emocional.</p>
 
-  <div class="approach-grid">
+    <div class="approach-grid">
 
-    <div class="approach-card">
-      <img src="images/mind.jpg" alt="Terapia Cognitiva" />
-      <h3>Terapia Cognitivo-Comportamental</h3>
-      <p>A TCC ajuda a identificar e transformar pensamentos e comportamentos que geram sofrimento, promovendo novas formas de lidar com desafios.</p>
+      <div class="approach-card">
+        <img src="images/mind.jpg" alt="Terapia Cognitiva" />
+        <h3>Terapia Cognitivo-Comportamental</h3>
+        <p>A TCC ajuda a identificar e transformar pensamentos e comportamentos que geram sofrimento, promovendo novas formas de lidar com desafios.</p>
+      </div>
+
+      <div class="approach-card">
+        <img src="images/balom.jpg" alt="Empatia e Escuta" />
+        <h3>Escuta Ativa e Empatia</h3>
+        <p>Ofereço um espaço seguro, leve e sem julgamentos, onde você pode expressar sentimentos e desenvolver autocompreensão.</p>
+      </div>
+
+      <div class="approach-card">
+        <img src="images/auto.jpg" alt="Autoconhecimento" />
+        <h3>Reconexão e Autoconhecimento</h3>
+        <p>O autoconhecimento é o primeiro passo para a cura emocional. Juntos, exploramos sua história, emoções e potencialidades.</p>
+      </div>
+
     </div>
-
-    <div class="approach-card">
-      <img src="images/balom.jpg" alt="Empatia e Escuta" />
-      <h3>Escuta Ativa e Empatia</h3>
-      <p>Ofereço um espaço seguro, leve e sem julgamentos, onde você pode expressar sentimentos e desenvolver autocompreensão.</p>
-    </div>
-
-    <div class="approach-card">
-      <img src="images/auto.jpg" alt="Autoconhecimento" />
-      <h3>Reconexão e Autoconhecimento</h3>
-      <p>O autoconhecimento é o primeiro passo para a cura emocional. Juntos, exploramos sua história, emoções e potencialidades.</p>
-    </div>
-
   </div>
 </section>
 
-<section class="services">
+<section class="services sec-roxa">
   <div class="container">
     <h2>Meus Serviços</h2>
 
@@ -206,7 +310,7 @@
   </div>
 </section>
 
-<section class="quote">
+<section class="quote sec-branca">
   <div class="container">
     <blockquote>
       “A cura emocional começa quando você decide se escutar com gentileza.”
@@ -215,19 +319,22 @@
   </div>
 </section>
 
-<section class="benefits container">
-  <h2>Benefícios da Terapia</h2>
+<section class="benefits sec-roxa">
+  <div class="container">
+    <h2>Benefícios da Terapia</h2>
 
-  <div class="benefits-grid">
-    <div class="benefit"><span>🧘‍♀️</span><p>Equilíbrio emocional</p></div>
-    <div class="benefit"><span>💬</span><p>Melhor comunicação</p></div>
-    <div class="benefit"><span>🌱</span><p>Autoconhecimento</p></div>
-    <div class="benefit"><span>💡</span><p>Novas perspectivas</p></div>
-    <div class="benefit"><span>💖</span><p>Autoestima fortalecida</p></div>
+    <div class="benefits-grid">
+      <div class="benefit"><span>🧘‍♀️</span><p>Equilíbrio emocional</p></div>
+      <div class="benefit"><span>💬</span><p>Melhor comunicação</p></div>
+      <div class="benefit"><span>🌱</span><p>Autoconhecimento</p></div>
+      <div class="benefit"><span>💡</span><p>Novas perspectivas</p></div>
+      <div class="benefit"><span>💖</span><p>Autoestima fortalecida</p></div>
+    </div>
   </div>
 </section>
 
-<section class="online">
+
+<section class="online sec-branca">
   <div class="container">
     <h2>Como Funciona o Atendimento Online</h2>
 
@@ -247,7 +354,7 @@
   </div>
 </section>
 
-<section class="pricing-section">
+<section class="pricing-section sec-roxa">
   <div class="container">
     
     <h2 class="pricing-title">Convênios e Valores</h2>
@@ -304,8 +411,7 @@
   </div>
 </section>
 
-
-<section class="faq-section">
+<section class="faq-section sec-branca">
   <div class="container">
 
     <h2 class="faq-title">Perguntas Frequentes</h2>
@@ -369,10 +475,7 @@
   </div>
 </section>
 
-
-
-
-<section class="atendimento-home">
+<section class="atendimento-home sec-roxa">
   <div class="container atendimento-box">
     <h2 class="sec-title">Horário de Atendimento</h2>
     <p class="sec-subtitle">Atendimento presencial e online, com horários flexíveis para acolher você e sua família.</p>
@@ -413,8 +516,7 @@
   </div>
 </section>
 
-
-<section class="contact-form">
+<section class="contact-form sec-branca">
   <div class="container">
     <h2>Agende Sua Sessão</h2>
     <p>Preencha o formulário e entrarei em contato o mais breve possível.</p>
@@ -424,13 +526,12 @@
       <input type="email" placeholder="E-mail" required>
       <input type="tel" placeholder="Telefone/WhatsApp" required>
       <textarea rows="5" placeholder="Como posso te ajudar?" required></textarea>
-
       <button type="submit" class="btn btn-primary">Enviar mensagem</button>
     </form>
   </div>
 </section>
 
-<section class="contact-info">
+<section class="contact-info sec-roxa">
   <div class="container contact-grid">
     <div class="contact-details">
       <h2>Entre em Contato</h2>
@@ -461,14 +562,14 @@
     </small>
   </div>
 </footer>
-<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
 <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
   <img src="images/whatsapp.svg" alt="WhatsApp">
 </a>
 
 <script src="script.js"></script>
+
 </body>
 </html>
-

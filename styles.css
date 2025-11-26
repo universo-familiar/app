@@ -1147,4 +1147,42 @@ body {
   }
 }
 
-  
+.logo {
+  height: 60px !important;
+  width: auto;
+  padding: 4px 0;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    height: 52px !important;
+  }
+}
+.prev,
+.next {
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+  font-size: 34px !important;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+.section-transition {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff 0%, #f4e4ff 100%);
+}
+
+.section-transition.reverse {
+  background: linear-gradient(to bottom, #f4e4ff 0%, #ffffff 100%);
+}
