@@ -6,7 +6,42 @@
   <title>Cursos | Universo Familiar</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .sec-roxa {
+      background: #8a4fdc !important;
+      width: 100% !important;
+      padding: 80px 0 !important;
+    }
+
+    .sec-branca {
+      background: #fff !important;
+      width: 100% !important;
+      padding: 80px 0 !important;
+    }
+
+    .sec-roxa h1, .sec-roxa h2, .sec-roxa h3,
+    .sec-roxa p, .sec-roxa li {
+      color: #fff !important;
+    }
+
+    .sec-roxa .btn,
+    .sec-roxa .btn-primary {
+      background: #fff !important;
+      color: #8a4fdc !important;
+      border-radius: 30px !important;
+      font-weight: 700 !important;
+    }
+
+    .sec-roxa .container,
+    .sec-branca .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  </style>
 </head>
+
 <body>
 
   <div class="topbar">
@@ -47,7 +82,6 @@
               <li><a href="cursos.html">Cursos</a></li>
               <li><a href="materiais.html">Materiais</a></li>
               <li><a href="consultorias.html">Consultorias</a></li>
-            
             </ul>
           </li>
 
@@ -62,70 +96,75 @@
     </div>
   </header>
 
-  <section class="container" style="padding: 80px 0;">
-    <h1 style="color: var(--purple-dark); margin-bottom: 40px;">Cursos</h1>
+  <section class="sec-roxa">
+    <div class="container">
 
-    <p style="font-size: 16px; line-height: 1.7; margin-bottom: 50px; max-width: 850px;">
-      Aqui você encontrará cursos desenvolvidos com embasamento científico e prática clínica, 
-      destinados a pais, professores e profissionais que desejam ampliar seus conhecimentos sobre 
-      comportamento infantil, saúde emocional, desenvolvimento e aprendizagem.
-    </p>
+      <h1>Cursos</h1>
 
-    <div class="services-grid">
+      <p style="font-size: 16px; line-height: 1.7; margin-top: 30px; max-width: 850px;">
+        Aqui você encontrará cursos desenvolvidos com embasamento científico e prática clínica, 
+        destinados a pais, professores e profissionais que desejam ampliar seus conhecimentos sobre 
+        comportamento infantil, saúde emocional, desenvolvimento e aprendizagem.
+      </p>
 
-      <div class="service-card" style="text-align: left;">
-        <img src="images/curso1.jpg" class="post-card-img" alt="Curso 1" style="width:100%; border-radius:14px; margin-bottom: 16px;">
-        <h3 style="color: var(--purple-dark);">Emoções na Infância</h3>
-        <div class="post-card-footer">
-        <p style="margin-top: 10px; margin-bottom: 16px;">
-          Curso voltado para pais e cuidadores que desejam compreender melhor as emoções das crianças, 
-          ajudando a identificar sinais de ansiedade, insegurança, medos e comportamentos desafiadores.
-        </p>
-        <div class="card-bottom">
-        <a href="#" class="btn btn-primary">Saiba mais</a>
-      </div>
+    </div>
+  </section>
 
+  <section class="sec-branca">
+    <div class="container">
+
+      <div class="services-grid">
+
+        <div class="service-card" style="text-align: left;">
+          <img src="images/curso1.jpg" class="post-card-img" alt="Curso 1" style="width:100%; border-radius:14px; margin-bottom: 16px;">
+          <h3 style="color: var(--purple-dark);">Emoções na Infância</h3>
+          <p style="margin-top: 10px; margin-bottom: 16px;">
+            Curso voltado para pais e cuidadores que desejam compreender melhor as emoções das crianças, 
+            ajudando a identificar sinais de ansiedade, insegurança, medos e comportamentos desafiadores.
+          </p>
+          <div class="card-bottom">
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
         </div>
-      </div>
 
-      <div class="service-card" style="text-align: left;">
-        <img src="images/curso2.jpg"  class="post-card-img" alt="Curso 2" style="width:100%; border-radius:14px; margin-bottom: 16px;">
-        <h3 style="color: var(--purple-dark);">Primeiros Passos na Psicopedagogia</h3>
-        <div class="post-card-footer">
-        <p style="margin-top: 10px; margin-bottom: 16px;">
-          Um curso introdutório ideal para estudantes e profissionais que desejam compreender o papel 
-          do psicopedagogo, as dificuldades de aprendizagem e os primeiros passos na intervenção.
-        </p>
-        <div class="card-bottom">
-        <a href="#" class="btn btn-primary">Saiba mais</a>
+        <div class="service-card" style="text-align: left;">
+          <img src="images/curso2.jpg" class="post-card-img" alt="Curso 2" style="width:100%; border-radius:14px; margin-bottom: 16px;">
+          <h3 style="color: var(--purple-dark);">Primeiros Passos na Psicopedagogia</h3>
+          <p style="margin-top: 10px; margin-bottom: 16px;">
+            Um curso introdutório ideal para estudantes e profissionais que desejam compreender o papel 
+            do psicopedagogo, as dificuldades de aprendizagem e os primeiros passos na intervenção.
+          </p>
+          <div class="card-bottom">
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
         </div>
-        </div>
-      </div>
 
-      <div class="service-card" style="text-align: left;">
-        <img src="images/curso3.jpg" class="post-card-img" alt="Curso 3" style="width:100%; border-radius:14px; margin-bottom: 16px;">
-        <h3 style="color: var(--purple-dark);">Comunicação Positiva na Família</h3>
-        <div class="post-card-footer">
-        <p style="margin-top: 10px; margin-bottom: 16px;">
-          Aprenda técnicas práticas de comunicação afetuosa e assertiva. Ideal para famílias que buscam 
-          reduzir conflitos e construir vínculos mais fortes e saudáveis.
-        </p>
-        <div class="card-bottom">
+        <div class="service-card" style="text-align: left;">
+          <img src="images/curso3.jpg" class="post-card-img" alt="Curso 3" style="width:100%; border-radius:14px; margin-bottom: 16px;">
+          <h3 style="color: var(--purple-dark);">Comunicação Positiva na Família</h3>
+          <p style="margin-top: 10px; margin-bottom: 16px;">
+            Aprenda técnicas práticas de comunicação afetuosa e assertiva. Ideal para famílias que buscam 
+            reduzir conflitos e construir vínculos mais fortes e saudáveis.
+          </p>
+          <div class="card-bottom">
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
 
-        <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
-        </div>
       </div>
 
     </div>
+  </section>
 
-    <div style="margin-top: 70px;">
-      <h2 style="color: var(--purple-dark); margin-bottom: 12px;">Novos cursos em breve</h2>
-      <p style="color: var(--muted); max-width: 700px;">
+  <section class="sec-roxa">
+    <div class="container">
+
+      <h2>Novos cursos em breve</h2>
+      <p style="max-width: 700px; margin-top: 20px;">
         Estamos preparando novos conteúdos exclusivos para ampliar a sua formação e tornar seu dia a dia mais leve.
       </p>
-    </div>
 
+    </div>
   </section>
 
   <footer class="site-footer">
@@ -133,21 +172,18 @@
       <small>
         © 2025 Universo Familiar — Todos os direitos reservados.
         &nbsp;|&nbsp;
-        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
-          Política de Privacidade
-        </a>
+        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); font-weight:600;">Política de Privacidade</a>
         &nbsp;|&nbsp;
-        <a href="termos-de-uso.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
-          Termos de Uso
-        </a>
+        <a href="termos-de-uso.html" style="color: var(--purple-dark); font-weight:600;">Termos de Uso</a>
       </small>
     </div>
   </footer>
-  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
-<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
-  <img src="images/whatsapp.svg" alt="WhatsApp">
-</a>
 
+  <button id="backToTop" class="back-to-top">↑</button>
+
+  <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn">
+    <img src="images/whatsapp.svg" alt="WhatsApp">
+  </a>
 
   <script src="script.js"></script>
 </body>

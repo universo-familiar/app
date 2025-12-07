@@ -5,10 +5,33 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Termos de Uso | Universo Familiar</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ESTILO LOCAL -->
+  <style>
+    .sec-roxa {
+      background: #8a4fdc !important;
+      padding: 80px 0 !important;
+    }
+    .sec-branca {
+      background: #fff !important;
+      padding: 80px 0 !important;
+    }
+    .sec-roxa h1, .sec-roxa h2, .sec-roxa p, .sec-roxa li, .sec-roxa strong {
+      color: #fff !important;
+    }
+    .sec-roxa .btn-primary {
+      background: #fff !important;
+      color: #8a4fdc !important;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+  </style>
 </head>
+
 <body>
 
+  <!-- TOPO -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
@@ -20,18 +43,17 @@
     </div>
   </div>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <img src="images/logo-placeholder.png" class="logo">
-      </div>
+      <div class="brand"><img src="images/logo-placeholder.png" class="logo"></div>
 
-      <nav class="main-nav" id="mainNav">
+      <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
 
           <li class="has-submenu">
-            <a href="#" class="active">Atendimentos</a>
+            <a href="#">Atendimentos</a>
             <ul class="submenu">
               <li><a href="terapia-individual.html">Terapia Individual</a></li>
               <li><a href="terapia-casal.html">Terapia de Casal</a></li>
@@ -40,13 +62,12 @@
           </li>
 
           <li class="has-submenu">
-            <a href="#" class="active">Produtos</a>
+            <a href="#">Produtos</a>
             <ul class="submenu">
               <li><a href="ebooks.html">E-books</a></li>
               <li><a href="cursos.html">Cursos</a></li>
               <li><a href="materiais.html">Materiais</a></li>
               <li><a href="consultorias.html">Consultorias</a></li>
-            
             </ul>
           </li>
 
@@ -55,53 +76,89 @@
       </nav>
 
       <div class="actions">
-        <a class="btn btn-primary" href="#">Solicite uma consulta</a>
+        <a class="btn btn-primary">Solicite uma consulta</a>
         <button class="hamburger" id="hamburger">☰</button>
       </div>
     </div>
   </header>
 
-  <section class="container" style="padding:80px 0;">
-    <h1 style="color:var(--purple-dark); margin-bottom:20px;">Termos de Uso</h1>
-
-    <p>Ao utilizar o site Universo Familiar, você concorda com os termos descritos nesta página. Caso não concorde, recomendamos que não utilize os serviços oferecidos.</p>
-
-    <h2 style="margin-top:40px;">1. Uso do Site</h2>
-    <p>O conteúdo disponibilizado é para fins informativos e não substitui avaliação psicológica ou psicopedagógica profissional.</p>
-
-    <h2 style="margin-top:40px;">2. Responsabilidade</h2>
-    <p>Os serviços oferecidos seguem padrões éticos da Psicologia e Psicopedagogia. Não nos responsabilizamos pelo mau uso das informações publicadas.</p>
-
-    <h2 style="margin-top:40px;">3. Propriedade Intelectual</h2>
-    <p>Todo o conteúdo do site é protegido por direitos autorais. É proibida a reprodução sem autorização.</p>
-
-    <h2 style="margin-top:40px;">4. Links Externos</h2>
-    <p>Alguns materiais podem conter links externos. Não nos responsabilizamos pelo conteúdo de terceiros.</p>
-
-    <h2 style="margin-top:40px;">5. Modificações</h2>
-    <p>Os Termos de Uso podem ser alterados a qualquer momento, sem aviso prévio.</p>
+  <!-- SEÇÃO ROXA 1 — TÍTULO -->
+  <section class="sec-roxa">
+    <div class="container">
+      <h1 style="margin-bottom: 20px;">Termos de Uso</h1>
+      <p>Para utilizar o site Universo Familiar, é necessário concordar com todos os termos listados abaixo.</p>
+    </div>
   </section>
+
+  <!-- SEÇÃO BRANCA 1 — APRESENTAÇÃO -->
+  <section class="sec-branca">
+    <div class="container">
+      <h2 style="color:var(--purple-dark);">1. Uso Geral do Site</h2>
+      <p>O conteúdo do site é para fins informativos e não substitui atendimento profissional.</p>
+
+      <p>Ao navegar, você concorda que não utilizará o site para:</p>
+      <ul style="margin-left:20px; line-height:1.8;">
+        <li>Coletar informações sem autorização</li>
+        <li>Violar dados, sistemas ou segurança</li>
+        <li>Publicar conteúdos ofensivos ou ilegais</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEÇÃO ROXA 2 — RESPONSABILIDADE -->
+  <section class="sec-roxa">
+    <div class="container">
+      <h2>2. Responsabilidade Profissional</h2>
+      <p>Os serviços seguem princípios éticos da Psicologia e Psicopedagogia.</p>
+      <p>O site não se responsabiliza por interpretações erradas de conteúdos publicados.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO BRANCA 2 — PROPRIEDADE -->
+  <section class="sec-branca">
+    <div class="container">
+      <h2 style="color:var(--purple-dark);">3. Propriedade Intelectual</h2>
+      <p>Todo o conteúdo é protegido por direitos autorais.</p>
+      <p>É proibido reproduzir qualquer material sem autorização escrita.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO ROXA 3 — LINKS EXTERNOS -->
+  <section class="sec-roxa">
+    <div class="container">
+      <h2>4. Links Externos e Conteúdo de Terceiros</h2>
+      <p>Algumas páginas podem conter links de parceiros ou referências externas.</p>
+      <p>Não nos responsabilizamos por conteúdos de sites de terceiros.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO BRANCA 3 — MODIFICAÇÕES -->
+  <section class="sec-branca">
+    <div class="container">
+      <h2 style="color:var(--purple-dark);">5. Modificações nos Termos</h2>
+      <p>Os Termos de Uso podem ser atualizados periodicamente sem aviso prévio.</p>
+      <p>Recomendamos revisar esta página regularmente.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <small>
-        © 2025 Universo Familiar — Todos os direitos reservados.
-        &nbsp;|&nbsp;
-        <a href="politica-de-privacidade.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
-          Política de Privacidade
-        </a>
-        &nbsp;|&nbsp;
-        <a href="termos-de-uso.html" style="color: var(--purple-dark); text-decoration: none; font-weight: 600;">
-          Termos de Uso
-        </a>
+        © 2025 Universo Familiar — Todos os direitos reservados. |
+        <a href="politica-de-privacidade.html" style="color:var(--purple-dark); font-weight:600;">Política de Privacidade</a> |
+        <a href="termos-de-uso.html" style="color:var(--purple-dark); font-weight:600;">Termos de Uso</a>
       </small>
     </div>
   </footer>
-<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
-<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
-    <img src="images/whatsapp.svg" alt="WhatsApp">
-  </a>
-  
 
-  <script src="script.js"></script>
+<button id="backToTop" class="back-to-top">↑</button>
+
+<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+  <img src="images/whatsapp.svg">
+</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>
